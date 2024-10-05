@@ -1,16 +1,16 @@
 package exceptions;
 
 import org.springframework.http.HttpStatus;
-public class ClubhiveException extends RuntimeException{
+public class NoBugsException extends RuntimeException{
 
         private HttpStatus httpStatus;
 
-        public ClubhiveException(String message, HttpStatus httpStatus) {
+        public NoBugsException(String message, HttpStatus httpStatus) {
             super(message);
             this.httpStatus = httpStatus;
         }
 
-        public ClubhiveException(String message, Throwable cause) {
+        public NoBugsException(String message, Throwable cause) {
             super(message, cause);
         }
 
